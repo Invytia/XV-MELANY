@@ -154,6 +154,11 @@
         /* Tipografía Editorial */
         .tag-line { font-family: 'Cinzel', serif; font-size: 14px; letter-spacing: 5px; text-transform: uppercase; color: var(--gold-magical); margin-bottom: 25px; font-weight: 600; }
         .title-script { font-family: 'Pinyon Script', cursive; font-size: 85px; color: var(--pink-dark); margin-bottom: 20px; line-height: 1.1; font-weight: 400; text-shadow: 0 0 20px rgba(243,197,208,0.5); }
+        
+        /* Clase nueva para Nombres Cursivos */
+        .script-name { font-family: 'Pinyon Script', cursive; font-size: 55px; color: var(--pink-dark); margin-bottom: 5px; font-weight: 400; line-height: 1.2; text-shadow: 0 2px 8px rgba(243,197,208,0.3); }
+        .bg-black .script-name { color: #ffffff; text-shadow: none; }
+
         .body-serif { font-family: 'Cormorant Garamond', serif; font-size: 24px; line-height: 1.6; color: var(--text-muted); font-style: italic; max-width: 600px; padding: 0 15px; font-weight: 400; }
         
         .bg-black .title-script { color: #F3C5D0; }
@@ -256,18 +261,18 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 2: Padres y Padrinos -->
+        <!-- SECCIÓN 2: Padres y Padrinos (Nombres Cursivos) -->
         <section class="section-block bg-pink-light">
             <div class="anim-element anim-fade-up delay-1 info-title">Mis Padres</div>
-            <div class="anim-element anim-fade-up delay-2 info-data">Tania Avalos</div>
+            <div class="anim-element anim-fade-up delay-2 script-name">Tania Avalos</div>
             <div class="anim-element anim-fade-up delay-3" style="font-family: 'Cinzel', serif; font-size: 20px; color: var(--gold-magical); margin: 10px 0;">&</div>
-            <div class="anim-element anim-fade-up delay-3 info-data">Fernando Ayala</div>
+            <div class="anim-element anim-fade-up delay-3 script-name">Fernando Ayala</div>
             
             <div class="anim-element anim-zoom delay-4 line-horizontal"></div>
             
             <div class="anim-element anim-fade-up delay-4 info-title">Mis Padrinos</div>
-            <div class="anim-element anim-fade-up delay-4 info-data" style="font-size: 28px;">Rosalba Arellano</div>
-            <div class="anim-element anim-fade-up delay-4 info-data" style="font-size: 28px;">Gilberto Avalos</div>
+            <div class="anim-element anim-fade-up delay-4 script-name">Rosalba Arellano</div>
+            <div class="anim-element anim-fade-up delay-4 script-name">Gilberto Avalos</div>
 
             <div class="anim-element anim-fade-up delay-4 photo-frame" style="margin-top: 50px;">
                 <img src="assets/2.jpg" alt="Familia" onerror="this.style.display='none'">
@@ -378,37 +383,22 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 8: Playlist -->
+        <!-- SECCIÓN 8: Galería en Vivo -->
         <section class="section-block bg-pink-light">
-            <div class="anim-element anim-fade-up delay-1 info-title">Música</div>
-            <div class="anim-element anim-fade-up delay-2 info-data" style="font-size: 38px;">Nuestra Playlist</div>
-            <p class="anim-element anim-fade-up delay-3 body-serif" style="margin: 20px auto 40px auto; font-size: 22px;">
-                Ayúdame a crear el ambiente perfecto agregando tus canciones favoritas para la pista de baile.
-            </p>
-            
-            <div class="anim-element anim-zoom delay-4" style="width: 100%; max-width: 480px; position: relative; z-index: 2;">
-                <iframe data-testid="embed-iframe" style="border-radius:12px; box-shadow: 0 15px 40px rgba(185,118,135,0.2);" src="https://open.spotify.com/embed/playlist/1y130CtgmL3nvoeIHSonB2?utm_source=generator&si=5d032cec158546a7" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-            
-            <a href="https://open.spotify.com/playlist/1y130CtgmL3nvoeIHSonB2?si=dffa337f29ee4898&pt=49bd6c5a08524934668990b66d428d33" target="_blank" class="anim-element anim-fade-up delay-4 btn-solid">Agregar Canciones</a>
-
-            <div class="anim-element anim-fade-up delay-4 photo-frame" style="margin-top: 70px;">
-                <img src="assets/9.jpg" alt="Fiesta" onerror="this.style.display='none'">
-            </div>
-        </section>
-
-        <!-- SECCIÓN 9: Galería en Vivo -->
-        <section class="section-block bg-pearl">
             <div class="anim-element anim-fade-up delay-1 info-title">Momentos</div>
             <div class="anim-element anim-fade-up delay-2 info-data" style="font-size: 38px;">Galería en Vivo</div>
             <p class="anim-element anim-fade-up delay-3 body-serif" style="margin: 25px auto; font-size: 22px;">
                 Captura la magia de esta noche. Comparte todas las fotos y videos que tomes directamente en nuestro álbum digital.
             </p>
             <a href="https://drive.google.com/drive/folders/1glQcWySiP4a5wS8i45Av8phCnvXNr1Pa?usp=sharing" target="_blank" class="anim-element anim-fade-up delay-4 btn-solid">Subir mis Fotos</a>
+
+            <div class="anim-element anim-fade-up delay-4 photo-frame" style="margin-top: 70px;">
+                <img src="assets/9.jpg" alt="Galería en Vivo" onerror="this.style.display='none'">
+            </div>
         </section>
 
-        <!-- SECCIÓN 10: RSVP y Pases VIP -->
-        <section class="section-block bg-pink-light">
+        <!-- SECCIÓN 9: RSVP y Pases VIP -->
+        <section class="section-block bg-pearl">
             <!-- Pases Dinámicos por URL ?p=X -->
             <div id="pases-section" style="display: none; width: 100%;">
                 <div class="anim-element anim-fade-up delay-1 info-title">Acceso al Evento</div>
